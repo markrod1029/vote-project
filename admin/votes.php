@@ -7,15 +7,15 @@
   <?php include 'includes/menubar.php'; ?>
 
   <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
+  <div class="content-wrapper" style="background-color:#E1F5FE ;color:black ; font-size: 17px; font-family:Times ">
     <!-- Content Header (Page header) -->
-    <section class="content-header">
+    <section class="content-header" style= "color:black ; font-size: 17px; font-family:Times">
       <h1>
-        Votes
+        VOTES
       </h1>
-      <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Votes</li>
+      <ol class="breadcrumb" style="color:black ; font-size: 17px; font-family:Times">
+        <li><a href="#"><i class="fa fa-dashboard" ></i> Home</a></li>
+        <li class="active" style="color:black ; font-size: 17px; font-family:Times" >Dashboard</li>
       </ol>
     </section>
     <!-- Main content -->
@@ -44,12 +44,12 @@
       ?>
       <div class="row">
         <div class="col-xs-12">
-          <div class="box">
-            <div class="box-header with-border">
-              <a href="#reset" data-toggle="modal" class="btn btn-danger btn-sm btn-flat"><i class="fa fa-refresh"></i> Reset</a>
+          <div class="box"style="background-color: #E1F5FE">
+            <div class="box-header with-border"style="background-color: #E1F5FE">
+              <a href="#reset" data-toggle="modal" class="btn btn-danger btn-sm btn-curve"  style="background-color: #ff8e88;color:black ; font-size: 12px; font-family:Times"><i class="fa fa-refresh"></i> Reset</a>
             </div>
             <div class="box-body">
-              <table id="example1" class="table table-bordered">
+              <table id="example1" class="table ">
                 <thead>
                   <th class="hidden"></th>
                   <th>Position</th>
@@ -62,7 +62,7 @@
                     $query = $conn->query($sql);
                     while($row = $query->fetch_assoc()){
                       echo "
-                        <tr>
+                        <tr style='color:black ; font-size: 15px; font-family:Times'>
                           <td class='hidden'></td>
                           <td>".$row['description']."</td>
                           <td>".$row['canfirst'].' '.$row['canlast']."</td>

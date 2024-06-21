@@ -117,6 +117,9 @@
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 2px;
 }
+
+
+
 .skin-blue .sidebar-form input[type="text"]:focus,
 .skin-blue .sidebar-form input[type="text"]:focus + .input-group-btn .btn {
   background-color: #fff;
@@ -160,6 +163,7 @@
   background: rgba(0, 0, 0, 0.1);
   color: #f6f6f6;
 }
+
 .skin-blue-light .main-header .navbar .sidebar-toggle {
   color: #ffffff;
 }

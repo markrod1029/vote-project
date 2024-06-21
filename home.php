@@ -5,8 +5,8 @@
 
 	<?php include 'includes/navbar.php'; ?>
 	 
-	  <div class="content-wrapper">
-	    <div class="container">
+	  <div class="content-wrapper" style="background-color: #E1F5FE ">
+	    <div class="container" style="background-color: #E1F5FE ">
 
 	      <!-- Main content -->
 	      <section class="content">
@@ -59,9 +59,9 @@
 				    	$vquery = $conn->query($sql);
 				    	if($vquery->num_rows > 0){
 				    		?>
-				    		<div class="text-center">
+				    		<div class="text-center" style="color:black ; font-size: 35px; font-family:Times" >
 					    		<h3>You have already voted for this election.</h3>
-					    		<a href="#view" data-toggle="modal" class="btn btn-flat btn-primary btn-lg">View Ballot</a>
+					    		<a href="#view" data-toggle="modal" class="btn btn-curve btn-primary btn-lg" style="background-color: #4682B4 ;color:black ; font-size: 22px; font-family:Times">View Ballot</a>
 					    	</div>
 				    		<?php
 				    	}
@@ -101,7 +101,7 @@
 											$image = (!empty($crow['photo'])) ? 'images/'.$crow['photo'] : 'images/profile.jpg';
 											$candidate .= '
 												<li>
-													'.$input.'<button type="button" class="btn btn-primary btn-sm btn-flat clist platform" data-platform="'.$crow['platform'].'" data-fullname="'.$crow['firstname'].' '.$crow['lastname'].'"><i class="fa fa-search"></i> Platform</button><img src="'.$image.'" height="100px" width="100px" class="clist"><span class="cname clist">'.$crow['firstname'].' '.$crow['lastname'].'</span>
+													'.$input.'<button type="button" class="btn btn-primary btn-sm btn-curve clist platform" style="background-color: #4682B4 ;color:black ; font-size: 12px; font-family:Times" data-platform="'.$crow['platform'].'" data-fullname="'.$crow['firstname'].' '.$crow['lastname'].'"><i class="fa fa-search"></i> Platform</button><img src="'.$image.'" height="100px" width="100px" class="clist"><span class="cname clist">'.$crow['firstname'].' '.$crow['lastname'].'</span>
 												</li>
 											';
 										}
@@ -111,14 +111,15 @@
 										echo '
 											<div class="row">
 												<div class="col-xs-12">
-													<div class="box box-solid" id="'.$row['id'].'">
-														<div class="box-header with-border">
+													<div class="box box-solid" style="background-color: #E1F5FE" id="'.$row['id'].'">
+														<div class="box-header with-border" style="background-color: #E1F5FE">
 															<h3 class="box-title"><b>'.$row['description'].'</b></h3>
 														</div>
-														<div class="box-body">
+														<div class="box-body" >
 															<p>'.$instruct.'
 																<span class="pull-right">
-																	<button type="button" class="btn btn-success btn-sm btn-flat reset" data-desc="'.slugify($row['description']).'"><i class="fa fa-refresh"></i> Reset</button>
+																
+																	<button type="button" class="btn btn-success btn-sm btn-curve reset" style="background-color:#9CD095 ;color:black ; font-size: 12px; font-family:Times"  data-desc="'.slugify($row['description']).'"><i class="fa fa-refresh"></i> Reset</button>
 																</span>
 															</p>
 															<div id="candidate_list">
@@ -138,8 +139,8 @@
 
 				        		?>
 				        		<div class="text-center">
-					        		<button type="button" class="btn btn-success btn-flat" id="preview"><i class="fa fa-file-text"></i> Preview</button> 
-					        		<button type="submit" class="btn btn-primary btn-flat" name="vote"><i class="fa fa-check-square-o"></i> Submit</button>
+					        		<button type="button" class="btn btn-success btn-curve" style='background-color: #9CD095 ;color:black ; font-size: 12px; font-family:Times' id="preview"><i class="fa fa-file-text"></i> Preview</button> 
+					        		<button type="submit" class="btn btn-primary btn-curve" style='background-color: #4682B4 ;color:black ; font-size: 12px; font-family:Times'name="vote"><i class="fa fa-check-square-o"></i> Submit</button>
 					        	</div>
 				        	</form>
 				        	<!-- End Voting Ballot -->

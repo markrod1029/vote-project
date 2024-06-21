@@ -1,6 +1,6 @@
-<footer class="main-footer">
-    <div class="pull-right hidden-xs">
+<footer class="main-footer" style="background-color: #717A83 ">
+    <div class="pull-right hidden-xs "  style="color:white ; font-size: 13px"  >
       <b>All rights reserved</b>
-    </div>
-    <strong>Copyright &copy; 2018 <a href="https://www.sourcecodester.com/">SourceCodeSter</a></strong>
+    </div  >
+    <b style="color:white ; font-size: 13px"><strong>Copyright &copy; LIbas National High School </strong></b>
 </footer>

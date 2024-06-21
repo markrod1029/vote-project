@@ -7,15 +7,15 @@
   <?php include 'includes/menubar.php'; ?>
 
   <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
+  <div class="content-wrapper" style="background-color:#E1F5FE " >
     <!-- Content Header (Page header) -->
     <section class="content-header">
-      <h1>
+      <h1><b>
         Candidates List
-      </h1>
-      <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Candidates</li>
+     </b> </h1>
+      <ol class="breadcrumb" style="color:black ; font-size: 17px; font-family:Times">
+        <li><a href="#"><i class="fa fa-dashboard" ></i> Home</a></li>
+        <li class="active" style="color:black ; font-size: 17px; font-family:Times" >Dashboard</li>
       </ol>
     </section>
     <!-- Main content -->
@@ -44,12 +44,12 @@
       ?>
       <div class="row">
         <div class="col-xs-12">
-          <div class="box">
-            <div class="box-header with-border">
-              <a href="#addnew" data-toggle="modal" class="btn btn-primary btn-sm btn-flat"><i class="fa fa-plus"></i> New</a>
+          <div class="box" style="background-color: #E1F5FE">
+            <div class="box-header with-border" style="background-color: #E1F5FE">
+              <a href="#addnew" data-toggle="modal" class="btn btn-primary btn-sm btn-curve" style="background-color: #4682B4 ;color:white ; font-size: 12px; font-family:Times"><i class="fa fa-plus"></i> New</a>
             </div>
             <div class="box-body">
-              <table id="example1" class="table table-bordered">
+              <table id="example1" class="table ">
                 <thead>
                   <th class="hidden"></th>
                   <th>Position</th>
@@ -66,7 +66,7 @@
                     while($row = $query->fetch_assoc()){
                       $image = (!empty($row['photo'])) ? '../images/'.$row['photo'] : '../images/profile.jpg';
                       echo "
-                        <tr>
+                        <tr style='color:black ; font-size: 15px; font-family:Times'>
                           <td class='hidden'></td>
                           <td>".$row['description']."</td>
                           <td>
@@ -75,10 +75,13 @@
                           </td>
                           <td>".$row['firstname']."</td>
                           <td>".$row['lastname']."</td>
-                          <td><a href='#platform' data-toggle='modal' class='btn btn-info btn-sm btn-flat platform' data-id='".$row['canid']."'><i class='fa fa-search'></i> View</a></td>
+                          <td><a href='#platform' data-toggle='modal' class='btn btn-info btn-sm btn-curve platform'  style='background-color: #00BFFF ;color:white ; font-size: 12px; font-family:Times' data-id='".$row['canid']."'><i class='fa fa-search'></i> View</a></td>
                           <td>
-                            <button class='btn btn-success btn-sm edit btn-flat' data-id='".$row['canid']."'><i class='fa fa-edit'></i> Edit</button>
-                            <button class='btn btn-danger btn-sm delete btn-flat' data-id='".$row['canid']."'><i class='fa fa-trash'></i> Delete</button>
+                            
+                            
+                            <button class='btn btn-success btn-sm edit btn-curve' style='background-color: #9CD095 ;color:white ; font-size: 12px; font-family:Times'  data-id='".$row['canid']."' ><i class='fa fa-edit'></i> Edit</button>
+                            <button class='btn btn-danger btn-sm delete btn-curve' style='background-color:#ff8e88 ;color:white ; font-size: 12px; font-family:Times' data-id='".$row['canid']."'><i class='fa fa-trash'></i> Delete</button>
+
                           </td>
                         </tr>
                       ";

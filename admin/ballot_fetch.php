@@ -20,7 +20,7 @@
 			$image = (!empty($crow['photo'])) ? '../images/'.$crow['photo'] : '../images/profile.jpg';
 			$candidate .= '
 				<li>
-					'.$input.'<button class="btn btn-primary btn-sm btn-flat clist"><i class="fa fa-search"></i> Platform</button><img src="'.$image.'" height="100px" width="100px" class="clist"><span class="cname clist">'.$crow['firstname'].' '.$crow['lastname'].'</span>
+					'.$input.'<button class="btn btn-primary btn-sm btn-curve clist" style="background-color: #4682B4 ;color:white ; font-size: 12px; font-family:Times"><i class="fa fa-search"></i> Platform</button><img src="'.$image.'" height="100px" width="100px" class="clist"><span class="cname clist">'.$crow['firstname'].' '.$crow['lastname'].'</span>
 				</li>
 			';
 		}
@@ -33,8 +33,8 @@
 		$output .= '
 			<div class="row">
 				<div class="col-xs-12">
-					<div class="box box-solid" id="'.$row['id'].'">
-						<div class="box-header with-border">
+					<div class="box box-solid"style="background-color: #8fd8f7" id="'.$row['id'].'">
+						<div class="box-header with-border" style="background-color: #8fd8f7">
 							<h3 class="box-title"><b>'.$row['description'].'</b></h3>
 							<div class="pull-right box-tools">
 				                <button type="button" class="btn btn-default btn-sm moveup" data-id="'.$row['id'].'" '.$updisable.'><i class="fa fa-arrow-up"></i> </button>
@@ -44,7 +44,7 @@
 						<div class="box-body">
 							<p>'.$instruct.'
 								<span class="pull-right">
-									<button type="button" class="btn btn-success btn-sm btn-flat reset" data-desc="'.slugify($row['description']).'"><i class="fa fa-refresh"></i> Reset</button>
+									<button type="button" class="btn btn-success btn-sm btn-curve reset" style="background-color:#9CD095 ;color:black ; font-size: 12px; font-family:Times"  data-desc="'.slugify($row['description']).'"><i class="fa fa-refresh"></i> Reset</button>
 								</span>
 							</p>
 							<div id="candidate_list">

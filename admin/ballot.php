@@ -7,15 +7,15 @@
   <?php include 'includes/menubar.php'; ?>
 
   <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
+  <div class="content-wrapper" style="background-color:#E1F5FE ">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-      <h1>
+      <h1><b>
         Ballot Position
-      </h1>
-      <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Ballot Preview</li>
+      </b></h1>
+      <ol class="breadcrumb" style="color:black ; font-size: 17px; font-family:Times">
+        <li><a href="#"><i class="fa fa-dashboard" ></i> Home</a></li>
+        <li class="active" style="color:black ; font-size: 17px; font-family:Times" >Dashboard</li>
       </ol>
     </section>
     <!-- Main content -->
@@ -43,8 +43,8 @@
         }
       ?>
 
-      <div class="row">
-        <div class="col-xs-10 col-xs-offset-1" id="content">
+      <div class="row" >
+        <div class="col-xs-10 col-xs-offset-1"  id="content">
         </div>
       </div>
       
